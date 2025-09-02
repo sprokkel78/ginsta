@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=gInsta
+Exec=/usr/bin/ginsta
+Comment=Instagram GUI Client
+Terminal=false
+Icon=/usr/share/ginsta-sprokkel78/instagram.svg
+Type=Application
