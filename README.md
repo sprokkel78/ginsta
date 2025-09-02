@@ -1,6 +1,6 @@
 ![Screenshot](https://github.com/sprokkel78/ginsta/blob/main/screenshots/title.png)
 
-![Screenshot](https://github.com/sprokkel78/ginsta/blob/main/screenshots/gInsta-1.png)
+![Screenshot](https://github.com/sprokkel78/ginsta/blob/main/screenshots/ginsta-1.png)
 
 A graphical user interface in PyGTK3 for using Instragram on Ubuntu and other Linux distro's. 
 It requires Python3.10 and the PyGTK apps. Developed on Fedora 42 and tested on Ubuntu 24.04.
