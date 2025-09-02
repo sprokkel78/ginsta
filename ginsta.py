@@ -11,7 +11,7 @@ class BrowserWindow(Gtk.Window):
         super().__init__(title="gInsta 1.0.1")
         self.set_default_size(800, 600)
 	
-	 # Create a web context for the WebView
+	# Create a web context for the WebView
         context = WebKit2.WebContext.get_default()
 
         # Get the cookie manager
@@ -25,8 +25,9 @@ class BrowserWindow(Gtk.Window):
         # Create WebView using this context
         webview = WebKit2.WebView.new_with_context(context)
         webview.load_uri("https://www.instagram.com")
+        webview.set_zoom_level(1.2)
 
-        # Scrolled window (optioneel)
+	# Scrolled window (optioneel)
         scrolled = Gtk.ScrolledWindow()
         scrolled.add(webview)
 
