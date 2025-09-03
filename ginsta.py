@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 import gi
+import os
 
 gi.require_version("Gtk", "3.0")
 gi.require_version("WebKit2", "4.1")  # voor GTK3 is het meestal "4.0"
 
 from gi.repository import Gtk, WebKit2, GLib
+
 
 class BrowserWindow(Gtk.Application):
     def __init__(self):
@@ -22,8 +24,10 @@ class BrowserWindow(Gtk.Application):
         cookie_manager = context.get_cookie_manager()
 
         # Store cookies persistently in a local file
+        user = ""
+        user = os.getlogin()
         cookie_manager.set_persistent_storage(
-            "/tmp/ginsta-cookies.db", WebKit2.CookiePersistentStorage.SQLITE
+            "/home/" + user + "/ginsta-cookies.db", WebKit2.CookiePersistentStorage.SQLITE
         )
 
         # Create WebView using this context
