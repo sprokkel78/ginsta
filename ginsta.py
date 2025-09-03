@@ -4,13 +4,17 @@ import gi
 gi.require_version("Gtk", "3.0")
 gi.require_version("WebKit2", "4.1")  # voor GTK3 is het meestal "4.0"
 
-from gi.repository import Gtk, WebKit2
+from gi.repository import Gtk, WebKit2, GLib
 
-class BrowserWindow(Gtk.Window):
+class BrowserWindow(Gtk.Application):
     def __init__(self):
-        super().__init__(title="gInsta 1.0.1")
-        self.set_default_size(800, 600)
-	
+        super().__init__(application_id="com.sprokkel78.ginsta")
+        GLib.set_application_name("gInsta")
+
+    def do_activate(self):
+        win=Gtk.ApplicationWindow(application=self, title="ginsta")
+        win.set_default_size(800, 600)
+
 	# Create a web context for the WebView
         context = WebKit2.WebContext.get_default()
 
@@ -31,15 +35,15 @@ class BrowserWindow(Gtk.Window):
         scrolled = Gtk.ScrolledWindow()
         scrolled.add(webview)
 
-        self.add(scrolled)
+        win.add(scrolled)
+        win.present()
+        scrolled.show()
+        webview.show()
 
-
+# START THE APPLICATION
 def main():
-    win = BrowserWindow()
-    win.connect("destroy", Gtk.main_quit)
-    win.show_all()
-    Gtk.main()
-
+    app = BrowserWindow()
+    app.run(None)
 
 if __name__ == "__main__":
     main()
