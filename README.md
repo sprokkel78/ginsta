@@ -17,18 +17,17 @@ For System-Wide Installation, run:
 - $sudo ./install.sh
 
 Then start with:
-- $gtodo
+- $ginsta
 - or by clicking the application icon.
 
 Added 'install.sh' script for system-wide installation.
-- The startup shell script will be /usr/bin/gtodo
-- The application is installed in /usr/share/gtodo-sprokkel78
-- The .desktop file is placed in /usr/share/applications/com.sprokkel78.gtodo.desktop
+- The startup shell script will be /usr/bin/ginsta
+- The application is installed in /usr/share/ginsta-sprokkel78
+- The .desktop file is placed in /usr/share/applications/com.sprokkel78.ginsta.desktop
 
 Added 'uninstall.sh' script for system-wide uninstallation.
-- This will delete /usr/bin/gtodo and /usr/share/gtodo-sprokkel78,
-  This will also remove /usr/share/applications/com.sprokkel78.gtodo.desktop
-- After uninstall it is optional to remove the .gtodo directory in your home-directory.
+- This will delete /usr/bin/ginsta and /usr/share/ginsta-sprokkel78,
+  This will also remove /usr/share/applications/com.sprokkel78.ginsta.desktop
 
 Check https://www.github.com/sprokkel78/ginsta for contributing, development features and pre-releases.
 
