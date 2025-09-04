@@ -29,5 +29,7 @@ Added 'uninstall.sh' script for system-wide uninstallation.
 - This will delete /usr/bin/ginsta and /usr/share/ginsta-sprokkel78,
   This will also remove /usr/share/applications/com.sprokkel78.ginsta.desktop
 
+After uninstall it is optional to remove the ginsta-cookies.db file and the .ginsta directory in your homedirectory.
+
 Check https://www.github.com/sprokkel78/ginsta for contributing, development features and pre-releases.
 
