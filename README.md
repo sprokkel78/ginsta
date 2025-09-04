@@ -32,6 +32,3 @@ Added 'uninstall.sh' script for system-wide uninstallation.
 After uninstall it is optional to remove the ginsta-cookies.db file and the .ginsta directory in your homedirectory.
 
 Check https://www.github.com/sprokkel78/ginsta for contributing, development features and pre-releases.
-
-# gchat
-# gchat
