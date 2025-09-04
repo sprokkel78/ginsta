@@ -33,3 +33,4 @@ After uninstall it is optional to remove the ginsta-cookies.db file and the .gin
 
 Check https://www.github.com/sprokkel78/ginsta for contributing, development features and pre-releases.
 
+# gchat
