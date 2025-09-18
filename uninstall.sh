@@ -1,9 +1,9 @@
 #!/bin/sh
 #
-# THIS SCRIPT WILL REMOVE THE GTODO APP SYSTEM WIDE
+# THIS SCRIPT WILL REMOVE THE GINSTA APP SYSTEM WIDE
 # THE SCRIPT MUST BE RUN WITH SUDO
 #
-# This will remove the gnordvpn app system wide.
+# This will remove the ginsta app system wide.
 #
 
 rm -rf /usr/share/ginsta-sprokkel78

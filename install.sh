@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# THIS SCRIPT WILL INSTALL THE GTODO APP SYSTEM WIDE
+# THIS SCRIPT WILL INSTALL THE GINSTA APP SYSTEM WIDE
 # THE SCRIPT MUST BE RUN WITH SUDO
 #
-# It will create a startup shell script named gtodo in /usr/bin,
-# the app will be placed in /usr/share/gtodo-sprokkel78
-# The .desktop file will be placed in /usr/share/applications/ as com.sprokkel78.gtodo.desktop
+# It will create a startup shell script named ginsta in /usr/bin,
+# the app will be placed in /usr/share/ginsta-sprokkel78
+# The .desktop file will be placed in /usr/share/applications/ as com.sprokkel78.ginsta.desktop
 
 mkdir -p /usr/share/ginsta-sprokkel78
 cp -r ./* /usr/share/ginsta-sprokkel78/
