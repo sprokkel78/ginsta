@@ -11,7 +11,7 @@ mkdir -p /usr/share/ginsta-sprokkel78
 cp -r ./* /usr/share/ginsta-sprokkel78/
 echo "#!/bin/sh" > /usr/bin/ginsta
 echo "cd /usr/share/ginsta-sprokkel78" >> /usr/bin/ginsta
-echo "python3 ./ginsta.py" >> /usr/bin/ginsta
+echo "WEBKIT_USE_SINGLE_WEB_PROCESS=1 python3 ./ginsta.py" >> /usr/bin/ginsta
 cp ./ginsta.desktop /usr/share/applications/com.sprokkel78.ginsta.desktop
 chmod 755 /usr/bin/ginsta
 chmod 664 /usr/share/ginsta-sprokkel78/*
